@@ -1,0 +1,86 @@
+.case-study {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.case-study .case-study-container {
+  max-width: 1200px;
+}
+.case-study .case-study-container .case-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.case-study .case-study-container .case-1 .content,
+.case-study .case-study-container .case-1 .image {
+  width: 50%;
+}
+.case-study .case-study-container .case-1 .content {
+  background: orange;
+  padding: 0 50px;
+}
+.case-study .case-study-container .case-1 .content h2 {
+  font-size: 35px;
+}
+.case-study .case-study-container .case-1 .content p {
+  margin-top: 5px;
+  line-height: 1.5;
+}
+.case-study .case-study-container .case-1 .content button {
+  margin: 25px 0;
+  outline: none;
+  border: none;
+  background: #002947;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  transition-duration: 0.5s;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.case-study .case-study-container .case-1 .content button:hover {
+  transform: translateY(-3px);
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2901960784));
+  background: #01385f;
+}
+.case-study .case-study-container .case-1 .image {
+  background: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.case-study .case-study-container .case-1 .image img {
+  height: 500px;
+  width: 100%;
+}
+.case-study .case-study-container .case-2 .image {
+  overflow: hidden !important;
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 32px !important;
+  }
+  .case-1,
+.case-3 {
+    flex-direction: column-reverse !important;
+  }
+  .case-1 .content,
+.case-1 .image,
+.case-3 .content,
+.case-3 .image {
+    width: 100% !important;
+  }
+  .case-2 .content,
+.case-2 .image,
+.case-4 .content,
+.case-4 .image {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=highlights.css.map */

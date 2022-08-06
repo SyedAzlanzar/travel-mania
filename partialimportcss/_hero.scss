@@ -1,0 +1,94 @@
+/* Explore */
+.section-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .section-text {
+    padding: 25px 0;
+
+    width: 50%;
+    min-height: 50vh;
+    // background: orange;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .inner {
+      min-height: 35vh;
+      width: 85%;
+    }
+    h3 {
+      font-size: 48px;
+      margin: 10px 0;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 20px 0 40px 0;
+    }
+    .btn {
+      text-decoration: none;
+      line-height: 1.5;
+
+      padding: 10px 20px;
+      background: #298594;
+      border-radius: 3px;
+      color: #fff;
+     
+      &:hover {
+        background: #217986;
+      }
+    }
+  }
+
+  .section-img {
+    padding: 25px 0;
+
+    width: 50%;
+    background: url("/images/TourPic-Final.png") no-repeat center/contain;
+    min-height: 50vh;
+  }
+}
+
+@media screen and (min-width: 769px) and(max-width:1024px) {
+  .explore {
+    zoom: 75%;
+    .section-text {
+      .inner {
+        width: 90%;
+        padding-left: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 768px) {
+  .explore {
+    zoom: 75%;
+    .section-text {
+      .inner {
+        width: 100%;
+        padding-left: 25px;
+      }
+    }
+    .section-img {
+      width: calc(50% - 20px) !important;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .explore {
+    zoom: 75%;
+  }
+  .section-img,
+  .section-text {
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 10px;
+  }
+}

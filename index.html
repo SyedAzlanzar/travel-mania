@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./WorldTour-png.png" type="image/x-icon" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <title>Worldtour</title>
+  </head>
+  <body>
+    <div id="loader" class="loader-container">
+      <div class="loader">
+        <img src="./preloader.gif" width="30%" alt="" />
+      </div>
+    </div>
+
+    <div id="container" style="overflow-x: hidden" class="container">
+      <header id="header">
+        <a href="" class="logo"
+          ><img
+            id="logo-image"
+            src="/WorldTour-png.png"
+            alt=""
+            width="150px"
+            height="auto"
+        /></a>
+        <div class="menu-toggle" id="menu"></div>
+        <nav id="nav">
+          <ul>
+            <li><a  href="/index.html" class="anchor">Home</a></li>
+            <li><a href="#aboutus" class="anchor">About</a></li>
+            <li><a href="#places" class="anchor">Places</a></li>
+            <li><a href="/gallery.html" class="anchor">Gallery</a></li>
+            <li><a href="#testimonial" class="anchor">Testimonial</a></li>
+            <li><a href="#contact" class="anchor">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="clearfix"></div>
+      </header>
+      <section id="homemain" class="homemain">
+        <video autoplay muted loop id="myVideo">
+          <source src="./videos/main-video.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="video-h2"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+          "
+        >
+          <h2 style="color: #fff; font-size: 75px; margin: 0px 20px">
+            Let's <span class="animate"></span>
+          </h2>
+        </div>
+      </section>
+
+      <section id="places" class="services">
+        <h1>OUR DESTINATIONS</h1>
+        <p>CHOOSE YOUR NEXT DESTINATION</p>
+        <div class="service-cards">
+          <div class="card card-1"><h2>Srilanka</h2></div>
+          <div class="card card-2"><h2>Turkey</h2></div>
+          <div class="card card-3"><h2>Indonesia-Bali</h2></div>
+          <div class="card card-4"><h2>SaudiArabia-Umrah</h2></div>
+          <div class="card card-5"><h2>Malaysia</h2></div>
+          <div class="card card-6"><h2>Egypt</h2></div>
+          <div class="card card-7"><h2>Azerbaijan-Baku</h2></div>
+          <div class="card card-8"><h2>Maldives</h2></div>
+          <div class="card card-9"><h2>Dubai</h2></div>
+          <div class="card card-10"><h2>Singapore</h2></div>
+          <div class="card card-11"><h2>Thailand</h2></div>
+        </div>
+      </section>
+
+      <section class="promotion">
+        <div class="promotion-content">
+          <p>SUMMER PROMOTION</p>
+          <p>Book your Turkey trip with us</p>
+          <p>1200$ per person</p>
+
+          <div class="btn"><button ><a href="#contact">More Details</a></button></div>
+        </div>
+      </section>
+
+      <!--Explore World-->
+      <section class="explore">
+        <div class="section-content">
+          <div class="section-text">
+            <div class="inner">
+              <h3 class="section-title">A new way to explore the world</h3>
+              <p class="p-description">
+                Travelers have relied on Lonely Planet books for years to help
+                them plan and carry out their ideal vacation, but now they can
+                also let Lonely Planet Experiences show them the way.
+              </p>
+              <a href="#contact" class="btn btn-explore">Learn more</a>
+            </div>
+          </div>
+          <div class="section-img"></div>
+        </div>
+      </section>
+      <!--Explore World-->
+
+      <section class="visa">
+        <div class="visa-content">
+          <h1>VISA OFFERS</h1>
+          <p>
+            We provide Visa
+          </p>
+
+          <button><a href="#contact">Learn more</a></button>
+        </div>
+      </section>
+
+      <!-- HIGHLIGHTS STARTS -->
+      <section class="case-study">
+        <div class="case-study-container">
+          <div class="case-1">
+            <div class="content">
+              <h2>HIGHLIGHTS OF TURKEY</h2>
+              <p>
+                Turkey is famous for the Blue Mosque, the New Mosque, the Hagia
+                Sophia (now a mosque again), and the Topkapı Palace in Istanbul;
+                the Bosporus Bridge, which connects Asia with Europe; the Galata
+                Bridge in Istanbul spans the Golden Horn; the Grand Bazaar in
+                Istanbul.
+              </p>
+              <button ><a href="#contact">MORE DETAILS</a></button>
+            </div>
+            <div class="image">
+              <video
+                src="./videos/WorldTour-Reels/My Video1.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+            </div>
+          </div>
+
+          <div class="case-2">
+            <div class="image">
+              <video
+                src="./videos/WorldTour-Reels/My Video2.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+            </div>
+            <div class="content">
+              <h2>HIGHLIGHTS OF BAKU</h2>
+              <p>
+                Around the walls of the fortress, the regular streets and
+                imposing buildings of modern Baku rise up the slopes of the
+                amphitheatre of hills surrounding the bay. Along the waterfront
+                an attractive park has been laid out. Most industrial plants are
+                located at the eastern and southwestern ends of the city.
+              </p>
+              <button ><a href="#contact">MORE DETAILS</a></button>
+
+            </div>
+          </div>
+
+          <div class="case-3">
+            <div class="content">
+              <h2>HIGHLIGHTS OF SUADI ARABIA</h2>
+              <p>
+                Saudi Arabia is famous for oil, to be the origin of Islam,
+                Arabian horses, the world's largest sand desert (Rub' Al Khali),
+                the world's largest oasis (Al-Ahsa), Arabian coffee, oil,
+                countless palaces, veiled women, countless mosques, Bedouins on
+                horses, Bedouins on camels, Bedouins with falcons,
+                sword-wielding dance moves, the holy cities of Mecca and Medina,
+                oil, the Kaaba at the center of the al-Haram mosque. And, Saudi
+                Arabia is the largest country in the world without a river.
+              </p>
+              <button ><a href="#contact">MORE DETAILS</a></button>
+
+            </div>
+            <div class="image">
+              <video
+                src="./videos/WorldTour-Reels/My Video3.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- HIGHLIGHTS ENDS -->
+
+      <section id="testimonial" class="testimonial">
+        <div class="items">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">
+                <img
+                  src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"
+                />
+              </h4>
+
+              <div class="template-demo">
+                <p>
+                  World Tour is the ideal location for you if you want to make
+                  the best memories possible. You were treated like family by
+                  them. The crew as a whole is outstanding.
+                </p>
+              </div>
+
+              <hr />
+
+              <div class="row">
+                <div class="col-sm-2">
+                  <img
+                    class="profile-pic"
+                    src="https://img.icons8.com/bubbles/100/000000/edit-user.png"
+                  />
+                </div>
+
+                <div class="col-sm-10">
+                  <div class="profile">
+                    <h4 class="cust-name">-Ahmed Abdullah</h4>
+                    <p class="cust-profession">Store Owner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">
+                <img
+                  src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"
+                />
+              </h4>
+
+              <div class="template-demo">
+                <p>
+                  Booking a World Tour to Turkey was a fantastic experience. I
+                  had a great time with their incredibly cooperative staff.
+                </p>
+              </div>
+
+              <hr />
+
+              <div class="row">
+                <div class="col-sm-2">
+                  <img
+                    class="profile-pic"
+                    src="https://img.icons8.com/bubbles/100/000000/edit-user.png"
+                  />
+                </div>
+
+                <div class="col-sm-10">
+                  <div class="profile">
+                    <h4 class="cust-name">-Ayesha Akbar</h4>
+                    <p class="cust-profession">Salon Owner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">
+                <img
+                  src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"
+                />
+              </h4>
+
+              <div class="template-demo">
+                <p>
+                  Had a wonderful time with the kind and cooperative World Tour
+                  staff. They take care of all the minor details to make the
+                  trip stress-free.
+                </p>
+              </div>
+
+              <hr />
+
+              <div class="row">
+                <div class="col-sm-2">
+                  <img
+                    class="profile-pic"
+                    src="https://img.icons8.com/bubbles/100/000000/edit-user.png"
+                  />
+                </div>
+
+                <div class="col-sm-10">
+                  <div class="profile">
+                    <h4 class="cust-name">-Muhammad Arsalan</h4>
+                    <p class="cust-profession">Marketing Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">
+                <img
+                  src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"
+                />
+              </h4>
+
+              <div class="template-demo">
+                <p>
+                  A wonderful trip was organised for me by World Tour. I would
+                  strongly advise everyone to use them. They greatly simplify
+                  things for me.
+                </p>
+              </div>
+
+              <hr />
+
+              <div class="row">
+                <div class="col-sm-2">
+                  <img
+                    class="profile-pic"
+                    src="https://img.icons8.com/bubbles/100/000000/edit-user.png"
+                  />
+                </div>
+
+                <div class="col-sm-10">
+                  <div class="profile">
+                    <h4 class="cust-name">-Ali Raza</h4>
+                    <p class="cust-profession">Android Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">
+                <img
+                  src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png"
+                />
+              </h4>
+
+              <div class="template-demo">
+                <p>
+                  I chose World Tour because of their organisation, Atmosephare.
+                  Kudos to the crew for their tireless efforts to provide a
+                  fantastic experience.
+                </p>
+              </div>
+
+              <hr />
+
+              <div class="row">
+                <div class="col-sm-2">
+                  <img
+                    class="profile-pic"
+                    src="https://img.icons8.com/bubbles/100/000000/edit-user.png"
+                  />
+                </div>
+
+                <div class="col-sm-10">
+                  <div class="profile">
+                    <h4 class="cust-name">-Ali Hamza Baloch</h4>
+                    <p class="cust-profession">Sales manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hotel">
+        <div class="sub-container-hotel">
+          <div class="content-hotel">
+            <div class="sub-content-hotel">
+              <h1>Book your trip Hotels.</h1>
+              <p>
+                Featuring 4 dining options, the ETC Hotel features an outdoor
+                pool, fitness center, free parking and luxurious rooms with city
+                views. Booked a suit, the room was quite big and very comfy.
+              </p>
+            </div>
+          </div>
+          <div class="image-hotel">
+            <img src="./images/hotel.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutus" class="aboutus">
+        <h1>ABOUT US</h1>
+        <div class="content-store">
+          <div class="right">
+            <div class="wrap-text">
+              <h3>who we are ?</h3>
+              <p>
+                World Tour specializes in planning journeys that customized to
+                the interests, demands, and specifications of each in-country
+                and out-of-country clients. Team World Tours crew are always
+                there to ensure that all of our clients have access to a
+                comprehensive range of services.
+              </p>
+            </div>
+          </div>
+          <div class="left">
+            <!-- <img src="./images/aboutus.jpg" alt="" /> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- contact-form-starts -->
+      <section id="form">
+        <div class="form-container">
+          <div class="form-division">
+            <div class="bg">
+              <div class="about-content">
+                <h3>Contact us</h3>
+                <h4>Then book your trip from our exclusive offers.</h4>
+              </div>
+              <div class="about-img">
+                <img src="./images/contactform/PicForForm.png" alt="" />
+              </div>
+            </div>
+            <form id="contact">
+              <fieldset>
+                <input
+                  placeholder="Your name"
+                  type="text"
+                  tabindex="1"
+                  required
+                />
+              </fieldset>
+
+              <fieldset>
+                <input
+                  placeholder="Your Email Address"
+                  type="email"
+                  tabindex="2"
+                  required
+                />
+              </fieldset>
+              <fieldset>
+                <input
+                  placeholder="Your Phone Number"
+                  type="tel"
+                  tabindex="3"
+                  required
+                />
+              </fieldset>
+
+              <fieldset>
+                <textarea
+                  placeholder="Type your message here...."
+                  tabindex="5"
+                  required
+                  rows="6"
+                ></textarea>
+              </fieldset>
+
+              <button name="submit" type="submit" id="contact-submit">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- contact-form-ends -->
+
+      <footer>
+        <div class="bg"></div>
+        <div class="content">
+          <div class="logo"><img src="./WorldTour-png.png" alt="" /></div>
+          <div class="titles">
+            <ul>
+              <li><a href="/index.html" >Home</a></li>
+              <li><a href="#aboutus">About</a></li>
+              <li><a href="#places">Places</a></li>
+              <li><a href="/gallery.html">Gallery</a></li>
+              <li><a href="#testimonial">Testimonial</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="social-icons">
+            <div>
+              <a href=""><img src="./images/footer/fb.png" alt="" /></a>
+            </div>
+            <div>
+              <a
+                href="https://www.instagram.com/worldtours2022/"
+                target="_blank"
+                ><img src="./images/footer/instagram.png" alt=""
+              /></a>
+            </div>
+            <div>
+              <a href=""><img src="./images/footer/youtube.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>Copyright &copy 2022 All rights reserved. Worldtour</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".menu-toggle").click(function () {
+          $("menu-toggle").toggleClass("active");
+          $("nav").toggleClass("active");
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      function togglemenu() {
+        var togmenu = document.querySelector(".toggle");
+        var togavairo = document.querySelector(".avairo");
+        togmenu.classList.toggle("active");
+        togavairo.classList.toggle("active");
+      }
+    </script>
+
+    <!-- --------------script typed.js start------------ -->
+    <script src="./typed.js"></script>
+    <script>
+      var typed = new Typed(".animate", {
+        strings: ["Explore", "Discover", "Adventure"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+    <!-- --------------script typed.js ends------------ -->
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+.packages {
+  min-height: 100vh;
+//   background: lightcyan;
+  .sub-packages {
+    width: 75%;
+    margin: 0 auto;
+    // background: orange;
+    min-height: 100vh;
+    h1,
+    h3 {
+      text-align: center;
+      margin: 5px 0px;
+      font-weight: 500;
+      //   background: red;
+    }
+    h1 {
+      padding-top: 50px;
+      font-size: 28px;
+    }
+    h3{
+        color: #434A547a;
+    }
+    .bar{
+        height: 10px;
+        margin: 0 auto;
+        border-bottom: 5px solid #f3e9e9;
+        width: 10%;
+    }
+    .packages-cards-container{
+        // background: #c9c7c7;
+        display:flex;   
+        justify-content: center;
+        align-items: center;
+        // height: 100vh;
+        .cards{
+            width:85% ;
+            // background: orange;
+            min-height: 100vh;
+            display:flex;   
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+        .card{
+            // background: purple;
+            box-shadow: 0px 0px 3px #0000002f;
+            width:300px;
+            height: auto;
+        overflow: hidden;
+        margin: 15px;
+         
+            .image{
+                display: flex;
+                flex-direction: column-reverse;
+                height: calc(425px/1.85);
+                p{
+                    margin: 0;
+                    font-size: 20px;
+                   background: #434A54; 
+                   color: $color_1;
+                   padding: 8px ;
+                }
+            }
+            .card-text{
+                height: calc(175px/1.4);
+                overflow: hidden;
+                p{
+                    padding:0px 15px ;
+                    color: #434A547a;
+                }
+            }
+            button{
+                padding: 10px 20px;
+               margin: 10px 15px;
+               background: #1BBC9B;
+               border: none;
+               color: $color_1;
+               font-size: 16px;
+               outline: none;
+               cursor: pointer;
+            }
+            button:hover{
+                background: #13ad8e;
+            }
+        }
+
+
+    }
+  }
+}

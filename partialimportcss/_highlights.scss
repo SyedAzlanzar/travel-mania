@@ -1,0 +1,125 @@
+.case-study {
+  // background: rebeccapurple;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .case-study-container {
+    // background: orange;
+    max-width: 1400px;
+    .case-1,
+    .case-2,
+    .case-3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px 0;
+      .content {
+        width: 50%;
+        overflow: hidden;
+      }
+      .image {
+        background: orange;
+        width: 470px;
+        overflow: hidden;
+        border-radius: 10px;
+        zoom: 60%;
+      }
+
+      .content {
+        padding: 0 50px;
+        h2 {
+          font-size: 35px;
+        }
+        p {
+          margin-top: 5px;
+          line-height: 1.5;
+          font-size: 16px;
+        }
+        button {
+          margin: 25px 0;
+          outline: none;
+          border: none;
+          background: #298594;
+          color: #fff;
+          font-size: 16px;
+          border-radius: 4px;
+          transition-duration: 0.5s;
+          padding: 10px 15px;
+          cursor: pointer;
+          a{
+            text-decoration: none;
+            color: #fff;
+          }
+          &:hover {
+            transform: translateY(-3px);
+            transition-property: transform;
+            transition-timing-function: ease-out;
+            transition-duration: 0.5s;
+            cursor: pointer;
+
+            // box-shadow: 5px 5px 10px #00000003 inset;
+            filter: drop-shadow(0px 10px 10px #0000004a);
+            background: #298594;
+          }
+        }
+      }
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 500px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .case-study-container {
+    width: 1024px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  h2 {
+    font-size: 20px !important;
+  }
+  .case-1,
+  .case-2 , .case-3 {
+    flex-wrap: wrap;
+    .content,
+    .image {
+      padding: 0 !important;
+
+      // width: 320px !important;
+    }
+  }
+
+  .case-1 , .case-3 {
+    flex-direction: column-reverse;
+  }
+  .case-1,
+  .case-2,
+  .case-3 {
+    .content{
+      width: 85% !important;
+    }
+    .image {
+      video{
+        width: 100%;
+      }
+      width: 85% !important;
+      zoom: 70%;
+    }
+  }
+}

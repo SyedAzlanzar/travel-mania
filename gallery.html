@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./WorldTour-png.png" type="image/x-icon" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <title>Gallery</title>
+  </head>
+  <body>
+    <div id="loader" class="loader-container">
+      <div class="loader">
+        <img src="./preloader.gif" width="30%" alt="" />
+      </div>
+    </div>
+
+
+    <header id="header">
+      <a href="" class="logo"
+        ><img
+          id="logo-image"
+          src="/WorldTour-png.png"
+          alt=""
+          width="150px"
+          height="auto"
+      /></a>
+      <div class="menu-toggle" id="menu"></div>
+      <nav id="nav">
+        <ul>
+          <li><a href="/index.html" class="active">Home</a></li>
+          <li><a href="/index.html#aboutus">About</a></li>
+          <li><a href="/index.html#places">Places</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/index.html#testimonial">Testimonial</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </header>
+
+    <section id="homemain" class="homemain">
+      <video autoplay muted loop id="myVideo">
+        <source src="/videos/main-video.mp4" type="video/mp4" />
+      </video>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          width: 100%;
+          position: absolute;
+        "
+      >
+        <h2 style="color: #fff; font-size: 75px; margin: 0px 20px">
+          Let's dive into the site
+        </h2>
+      </div>
+
+      <div class="wrap"></div>
+    </section>
+
+    <section class="gallery">
+      <h1>Our Gallery</h1>
+      <div class="gallery-images">
+        <div class="gallery-card">
+          <img src="./images/gallery/baku.jpg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/dubai.jpg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/egypt.jpg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/indonesia-bali.jpg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/lebanon.jpg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/malaysia.jpg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/mardives.jpg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/saudiarabia.jpg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/singapore.jpg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/srilanka.jpg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/thailand.jpg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/turkey1.jpg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/1.jpeg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/2.jpeg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/3.jpeg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/4.jpeg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/5.jpeg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/6.jpeg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/7.jpeg" alt="" />
+        </div>
+        <div class="gallery-card">
+          <img src="./images/gallery/8.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bg"></div>
+      <div class="content">
+        <div class="logo"><img src="./WorldTour-png.png" alt="" /></div>
+        <div class="titles">
+          <ul>
+            <li><a href="/index.html" >Home</a></li>
+            <li><a href="/index.html#aboutus">About</a></li>
+            <li><a href="/index.html#places">Places</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/index.html#testimonial">Testimonial</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social-icons">
+          <div>
+            <a href=""><img src="./images/footer/fb.png" alt="" /></a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/worldtours2022/" target="_blank"
+              ><img src="./images/footer/instagram.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href=""><img src="./images/footer/youtube.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright &copy 2022 All rights reserved. Worldtour</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".menu-toggle").click(function () {
+          $("menu-toggle").toggleClass("active");
+          $("nav").toggleClass("active");
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      function togglemenu() {
+        var togmenu = document.querySelector(".toggle");
+        var togavairo = document.querySelector(".avairo");
+        togmenu.classList.toggle("active");
+        togavairo.classList.toggle("active");
+      }
+    </script>
+    <script src="/main.js"></script>
+  </body>
+</html>
