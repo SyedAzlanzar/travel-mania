@@ -922,6 +922,7 @@ nav ul li a:hover {
   background: orange;
   width: 470px;
   overflow: hidden;
+  height: 900px !important;
   border-radius: 10px;
   zoom: 60%;
 }
@@ -1146,6 +1147,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   margin: 100px 0;
+  padding: 100px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1237,7 +1239,7 @@ p {
     background: #fff !important;
   }
   .sub-container-hotel .image-hotel img {
-    height: 375px !important;
+    height: 250px !important;
   }
 }
 
