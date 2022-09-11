@@ -279,7 +279,7 @@ nav ul li a {
     font-size: 30px;
     color: #0e6086;
     &:before {
-      content: "\f0c9";
+      content: "☰";
       line-height: 40px;
     }
   }
@@ -327,7 +327,7 @@ nav ul li a {
     transition: all 0.5s ease-in-out;
     width: 100%;
     border-radius: 0px;
-    background: rgba(255, 255, 255, 0.8) !important;
+    background: rgb(255, 255, 255) !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
     z-index: 1000;
