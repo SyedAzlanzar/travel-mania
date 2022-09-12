@@ -1,3 +1,3 @@
 # travel-mania
 
-check out at https://worldtour2022.netlify.app/
+check out at https://tourvalley.netlify.app/
